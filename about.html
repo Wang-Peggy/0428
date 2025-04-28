@@ -3,8 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+
+        .relative1{
+            position: relative;
+            top: 450px;
+            left: 135px;
+        }
+        .relative2{
+            position: relative;
+            top: -30px;
+        }
+        .relative3{
+            position: relative;
+            top: -30px;
+        }
+
+        .npc{
+            position: absolute;
+
+        }
+        .mask1{
+            position: absolute;
+
+        }
+        .kkk{
+            position: relative;
+            top: -140px;
+            z-index: -100;
+        }
+        .aaab{
+            position: relative;
+            top: -260px;
+            left: 160px;
+            color: white;
+        }
+        .box{
+            width: 250px;
+            height: 250px;
+            position: relative;
+            top: -700px;
+            left: 65px;
+            z-index: -50;
+
+            animation-name: movingBox;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes movingBox {
+            0%{
+                rotate: 0deg;
+                background-color: rgba(255, 183, 101, 0.13);
+            }
+
+            100%{
+                rotate: 360deg;
+                background-color: rgba(255, 225, 101, 0.13);
+            }
+        }
+
+
+
+    </style>
 </head>
 <body>
-
+<div class="card">
+    <div class="npc"><img src="https://patchwiki.biligame.com/images/sr/5/52/rpu07i97b95ppq9vzq819evnp5idtmk.png" width="376px" height="512px"></div>
+    <div class="mask1"><img src="https://patchwiki.biligame.com/images/sr/c/ce/1bq2vaqwavmj6ssh3nrrpg60i4njcaa.png" width="376px" height="512px"></div>
+    <div class="relative1"><img src="https://patchwiki.biligame.com/images/sr/c/c7/g380fo4o5accoa1rmlckz3e24vpx23e.png" width="99px" height="27px"></div>
+    <div class="relative2"><img src="https://patchwiki.biligame.com/images/sr/2/2e/775ydtt0xi9c50kkxob93a1km9uzkl0.png"width="50px" height="50px"></div>
+    <div class="relative3"><img src="https://patchwiki.biligame.com/images/sr/5/52/132vc5qvjhae5zis2eifcflz0kbdpj3.png" width="50px" height="50px"></div>
+    <div class="kkk"><img src="https://patchwiki.biligame.com/images/sr/a/a7/2ouh10uu2cfj052jdgz0nsm20q42l56.png" width="376px"height="512px"></div>
+    <div class="aaab"><h2>流螢</h2></div>
+    <div class="box"></div>
+</div>
 </body>
 </html>
